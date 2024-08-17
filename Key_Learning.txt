@@ -1,0 +1,10 @@
+- The data have to be in format of "[Question] <EOS> [Answer] <EOS>" in order to train in a "decoder model"
+
+- Should be multiple question to one answer (for information chatbot kind of gpt)
+
+- When tokenize data, output would contain the whole input but emit the first words in input
+e.g. 
+intput: What is ...? <EOS> [Answer] 
+output: is ...? <EOS> [Answer] <EOS>
+
+- The input also contain the answer in it. This is called "teacher forcing" to make training faster
