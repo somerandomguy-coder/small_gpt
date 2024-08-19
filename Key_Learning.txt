@@ -8,3 +8,9 @@ intput: What is ...? <EOS> [Answer]
 output: is ...? <EOS> [Answer] <EOS>
 
 - The input also contain the answer in it. This is called "teacher forcing" to make training faster
+
+- There's several way to tokenize data, there's word tokenizing, character tokenizing, sub-word tokenizing.
+
+- Positional encoding is a fix table so we can pre-calculate the it as a look up table to make the process faster.
+
+
